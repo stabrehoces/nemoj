@@ -1,1 +1,1 @@
-web: bin/start
+web: nginx -g 'daemon off;'
