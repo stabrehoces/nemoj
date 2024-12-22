@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="../1488.png">
+    <title>1488</title>
+</head>
+<body>
+    <header>
+
+        <h1>1488</h1>
+        <h2>|| Hall of Retards ||</h2>
+        <br>
+        <nav>
+            <a href="../index/index.html">Hall of Shame</a>
+            <a href="../request/request-delete.html">Request Delete</a>
+            <a href="https://discord.gg/tJUxKjYVrx" target="_blank">Discord</a>
+        </nav>
+
+<br>
+<br>
+
+<!--ATTENTION-->
+<div id="att-box" class="att">
+    <button class="close-btn">&times;</button>
+    <p><strong>Attention!</strong> The "Request Detele" page is currently not working. Contact us: loveesex@proton.me</p>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="dont-show-checkbox">
+      <label for="dont-show-checkbox">Don't Show Again</label>
+    </div>
+
+  <script>
+        if (localStorage.getItem('hideAlert') === 'true') { 
+      document.getElementById('att-box').style.display = 'none';
+    }
+
+    document.querySelector('.close-btn').addEventListener('click', function () {
+      document.getElementById('att-box').style.display = 'none';
+    });
+
+    document.querySelector('.dont-show-btn').addEventListener('click', function () {
+      localStorage.setItem('hideAlert', 'true'); // Save preference
+      document.getElementById('att-box').style.display = 'none';
+    });
+  </script>
+
+<!--SERVERS TAB-->
+
+    </header>
+
+    <main class="content">
+    <div class="angelix">
+        <a href="../angelix/angelix.html" class="post">ANGELIX</a>
+    </div>
+
+    <div class="slovakia">
+        <a href="../slovakia/slovakia.html" class="post">SLOVAKIA</a>
+    </div>
+
+    <div class="incoming">
+        <a href="../incoming/incoming.html" class="post">**INCOMING**</a>
+    </div>
+
+    <div id="updates-tab">
+        <button id="close-btn">&times;</button>
+        <h1 style="text-align: center;">**UPDATES**</h1>
+        <ul>
+          <h3>2024.12.21</h3>
+          <li>Beginning of The Site.</li>
+        </ul>
+      </div>
+      <button id="open-btn">Updates</button>
+    
+      <script>
+        const updatesTab = document.getElementById("updates-tab");
+        const openBtn = document.getElementById("open-btn");
+        const closeBtn = document.getElementById("close-btn");
+    
+        openBtn.addEventListener("click", () => {
+          updatesTab.classList.add("open");
+        });
+    
+        closeBtn.addEventListener("click", () => {
+          updatesTab.classList.remove("open");
+        });
+      </script>
+
+    </main>
+    <footer>
+        <p style="font-size: 18px;">You may wonder what this site is about. <br>
+          <a href="more.html" style="color:red; font-size: 20px;">Read more</a></p>
+    </footer>
+</body>
+</html>
